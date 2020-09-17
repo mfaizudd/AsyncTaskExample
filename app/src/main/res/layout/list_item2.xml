@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <GridLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:columnCount="3"
+        android:alignmentMode="alignBounds"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="@dimen/grid_normal"
+            android:layout_height="@dimen/grid_normal"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="@dimen/grid_normal"
+            android:layout_height="@dimen/grid_normal"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="@dimen/grid_normal"
+            android:layout_height="@dimen/grid_normal"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="@dimen/grid_normal"
+            android:layout_height="@dimen/grid_normal"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/image5"
+            android:layout_width="@dimen/grid_normal"
+            android:layout_height="@dimen/grid_normal"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/image6"
+            android:layout_width="@dimen/grid_normal"
+            android:layout_height="@dimen/grid_normal"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/image8"
+            android:layout_width="@dimen/grid_large"
+            android:layout_height="@dimen/grid_large"
+            android:layout_rowSpan="2"
+            android:layout_columnSpan="2"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/image7"
+            android:layout_width="@dimen/grid_normal"
+            android:layout_height="@dimen/grid_normal"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/image9"
+            android:layout_width="@dimen/grid_normal"
+            android:layout_height="@dimen/grid_normal"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/loading_bar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
